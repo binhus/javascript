@@ -1,0 +1,10 @@
+img {
+  width: 100px;
+}
+
+header {
+  align-items: center;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+}

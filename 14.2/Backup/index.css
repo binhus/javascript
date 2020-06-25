@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.false {
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: slide-out;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  left: -400px;
+  position: absolute;
+  top: 200px;
+  width: 400px;
+}
+
+.true {
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: slide-in;
+  background-color: grey;
+  border-radius: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  left: 0px;
+  position: absolute;
+  top: 200px;
+  width: 400px;
+}
+
+.nav-bar {
+  border-radius: 50px;
+  float: right;
+}
+
+@keyframes slide-in {
+  from {
+    background-color: white;
+    margin-left: -400px;
+    opacity: 0%;
+  }
+  to {
+    background-color: gray;
+    margin-left: 0;
+    opacity: 100%;
+  }
+}
+@keyframes slide-out {
+  from {
+    background-color: gray;
+    margin-left: 400px;
+    opacity: 100%;
+  }
+  to {
+    background-color: white;
+    margin-left: 0px;
+    opacity: 0%;
+  }
+}
